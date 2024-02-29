@@ -1,0 +1,203 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.header{
+    grid-area: header;
+    text-align: center;
+    background-color: brown;
+    height: 80px;
+}
+
+#Start{
+    background-color: #771100;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+#StartButtonDIV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.map{
+    grid-area: map;
+    background-color: #3366ff;
+    background-image: url(Water.jpg);
+    background-size: 50px;
+    width: 1450px;
+    height: 800px;
+    overflow:hidden;
+    text-align: center;
+}
+
+#menu{
+    grid-area: menu;
+    background-color: blueviolet;
+    height: 200px;
+}
+
+.LSB{
+    grid-area: lb;
+    background-color:#962f2f;
+    width: 235px;
+    height: 800px;
+    position: relative;
+}
+
+#LB2{
+    display: none;
+    width: 260px;
+}
+
+#RB2{
+    display: none;
+    width: 260px;
+}
+
+#RBSoldier{
+    display: none;
+    width: 260px;
+}
+
+.PlaceButton{
+    padding: 0%;
+    border-radius: 5%;
+    width: 260px;
+    margin: 0;
+}
+
+#LMP{
+    display: none;
+}
+
+.RSB{
+    grid-area: rb;
+    background-color: #962f2f;
+    width: 235px;
+    height: 800px;
+    position: relative;
+}
+
+#Game{
+    padding: 0%;
+    display: none;
+    grid-template-areas: 
+    'header  header  header  header  header  header  header'
+    'lb      map     map     map     map     map     rb'
+    'lb      map     map     map     map     map     rb'
+    'lb      map     map     map     map     map     rb'
+    'menu    menu    menu    menu    menu    menu    menu';
+}
+
+#container > div{
+    padding: 0%;
+    margin: 0%;
+}
+
+.MapControl{
+    padding: 0%;
+    border-radius: 5%;
+    width: 235px;
+    margin: 0;
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.MapZoom1{
+    height: 800px;
+    width: 1450px;
+    display: none;
+}
+
+.MapZoom2{
+    display: none;
+}
+
+.DragEnabled{
+    cursor: pointer;
+}
+
+.MapTiles{
+    height: 800px;
+    width: 1400px;
+    display: none;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+.MapTiles > img{
+    row-gap: 0px;
+}
+
+#EndTurn{
+  display: none;
+}
+
+.RLabelDistrict{
+  display: none;
+}
+
+#ZoomIn{
+    display: none;
+}
+
+#BuildingLevel{
+    display: none;
+}
+
+#menu{
+    grid-template-areas:
+    'Turn   Turn   Turn   Turn   Turn   Turn'
+    'Label1 Label2 Label3 Label4 Label5 Label6';
+    display: grid;
+    text-align: center;
+}
+
+#TurnCount{
+    grid-area: Turn;
+    display: grid;
+}
+
+#PopulationTable{
+    grid-area: Label1;
+    display: grid;
+}
+
+#MoneyTable{
+    grid-area: Label2;
+    display: grid;
+}
+
+#WoodTable{
+    grid-area: Label3;
+    display: grid;
+}
+
+#FoodTable{
+    grid-area: Label4;
+    display: grid;
+}
+
+#SteelTable{
+    grid-area: Label5;
+    display: grid;
+}
+
+#WeaponsTable{
+    grid-area: Label6;
+    display: grid;
+}
+
+#EndScreen{
+    display: none;
+}
+
+.Icon{
+    width: 150px;
+    height: 150px;
+}
